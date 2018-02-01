@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -703,6 +703,7 @@ W = angled&lt;p&gt;
 <part name="X1" library="con-lsta" deviceset="FE10-2" device=""/>
 <part name="BH1750" library="con-lsta" deviceset="FE05-1" device=""/>
 <part name="PIR1" library="pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="UART" library="con-lstb" deviceset="MA04-1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -715,6 +716,7 @@ W = angled&lt;p&gt;
 <instance part="X1" gate="G$1" x="10.16" y="58.42"/>
 <instance part="BH1750" gate="G$1" x="48.26" y="66.04"/>
 <instance part="PIR1" gate="G$1" x="73.66" y="78.74" rot="R180"/>
+<instance part="UART" gate="1" x="48.26" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -724,11 +726,6 @@ W = angled&lt;p&gt;
 <pinref part="X1" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
 <label x="20.32" y="48.26" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ISP" gate="1" pin="6"/>
-<wire x1="2.54" y1="30.48" x2="0" y2="30.48" width="0.1524" layer="91"/>
-<label x="0" y="30.48" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="BMP280" gate="1" pin="4"/>
@@ -744,6 +741,16 @@ W = angled&lt;p&gt;
 <pinref part="PIR1" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
 <label x="83.82" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="ISP" gate="1" pin="2"/>
+<wire x1="2.54" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
+<label x="0" y="25.4" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="UART" gate="1" pin="4"/>
+<wire x1="55.88" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
+<label x="58.42" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VRAW" class="0">
@@ -766,6 +773,11 @@ W = angled&lt;p&gt;
 <wire x1="2.54" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="91"/>
 <label x="0" y="53.34" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<wire x1="55.88" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
+<label x="58.42" y="22.86" size="1.778" layer="95"/>
+<pinref part="UART" gate="1" pin="2"/>
+</segment>
 </net>
 <net name="RST" class="0">
 <segment>
@@ -784,11 +796,6 @@ W = angled&lt;p&gt;
 <pinref part="X1" gate="G$1" pin="9"/>
 <wire x1="2.54" y1="58.42" x2="0" y2="58.42" width="0.1524" layer="91"/>
 <label x="0" y="58.42" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="PIR2" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
-<label x="83.82" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D5_PWM" class="0">
@@ -902,6 +909,11 @@ W = angled&lt;p&gt;
 <wire x1="17.78" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
 <label x="20.32" y="58.42" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="PIR2" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
+<label x="83.82" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LEGACY_ID" class="0">
 <segment>
@@ -916,17 +928,17 @@ W = angled&lt;p&gt;
 <wire x1="17.78" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
 <label x="20.32" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="55.88" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<label x="58.42" y="20.32" size="1.778" layer="95"/>
+<pinref part="UART" gate="1" pin="1"/>
+</segment>
 </net>
 <net name="GND" class="1">
 <segment>
 <pinref part="X1" gate="G$1" pin="4"/>
 <wire x1="17.78" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
 <label x="20.32" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ISP" gate="1" pin="2"/>
-<wire x1="2.54" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
-<label x="0" y="25.4" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="BMP280" gate="1" pin="3"/>
@@ -948,13 +960,21 @@ W = angled&lt;p&gt;
 <wire x1="81.28" y1="43.18" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
 <label x="83.82" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="ISP" gate="1" pin="6"/>
+<wire x1="2.54" y1="30.48" x2="0" y2="30.48" width="0.1524" layer="91"/>
+<label x="0" y="30.48" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<wire x1="55.88" y1="25.4" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
+<label x="58.42" y="25.4" size="1.778" layer="95"/>
+<pinref part="UART" gate="1" pin="3"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,2.54,53.34,D1_DFM,,,,,"/>
-<approved hash="106,1,17.78,53.34,D2_DTM,,,,,"/>
 <approved hash="106,1,17.78,58.42,D4_INT,,,,,"/>
 <approved hash="106,1,2.54,60.96,D5_PWM,,,,,"/>
 <approved hash="106,1,17.78,60.96,D6_PWM,,,,,"/>
@@ -968,8 +988,9 @@ W = angled&lt;p&gt;
 <approved hash="113,1,78.6977,42.1047,PIR2,,,,,"/>
 <approved hash="113,1,10.16,29.4047,ISP,,,,,"/>
 <approved hash="113,1,10.16,61.1547,X1,,,,,"/>
-<approved hash="113,1,53.2977,67.5047,SV1,,,,,"/>
+<approved hash="113,1,53.2977,67.5047,BH1750,,,,,"/>
 <approved hash="113,1,75.9629,77.3388,PIR1,,,,,"/>
+<approved hash="113,1,53.2977,26.8647,UART,,,,,"/>
 </errors>
 </schematic>
 </drawing>
