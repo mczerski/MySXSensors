@@ -730,18 +730,6 @@ W = angled&lt;p&gt;
 <pinref part="SV1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="D1_DFM" class="0">
-<segment>
-<wire x1="55.88" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
-<label x="58.42" y="22.86" size="1.778" layer="95"/>
-<pinref part="UART" gate="1" pin="2"/>
-</segment>
-<segment>
-<wire x1="17.78" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
-<label x="20.32" y="53.34" size="1.778" layer="95"/>
-<pinref part="SV1" gate="G$1" pin="6"/>
-</segment>
-</net>
 <net name="RST" class="0">
 <segment>
 <pinref part="ISP" gate="1" pin="5"/>
@@ -864,18 +852,6 @@ W = angled&lt;p&gt;
 <pinref part="SV1" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="D2_DTM" class="0">
-<segment>
-<wire x1="55.88" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
-<label x="58.42" y="20.32" size="1.778" layer="95"/>
-<pinref part="UART" gate="1" pin="1"/>
-</segment>
-<segment>
-<wire x1="2.54" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="91"/>
-<label x="0" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="SV1" gate="G$1" pin="5"/>
-</segment>
-</net>
 <net name="GND" class="1">
 <segment>
 <pinref part="BMP280" gate="1" pin="3"/>
@@ -951,6 +927,30 @@ W = angled&lt;p&gt;
 <wire x1="17.78" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 <label x="20.32" y="66.04" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="16"/>
+</segment>
+</net>
+<net name="D1_TX" class="0">
+<segment>
+<wire x1="55.88" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
+<label x="58.42" y="22.86" size="1.778" layer="95"/>
+<pinref part="UART" gate="1" pin="2"/>
+</segment>
+<segment>
+<wire x1="17.78" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
+<label x="20.32" y="53.34" size="1.778" layer="95"/>
+<pinref part="SV1" gate="G$1" pin="6"/>
+</segment>
+</net>
+<net name="D2_RX" class="0">
+<segment>
+<wire x1="55.88" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<label x="58.42" y="20.32" size="1.778" layer="95"/>
+<pinref part="UART" gate="1" pin="1"/>
+</segment>
+<segment>
+<wire x1="2.54" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="91"/>
+<label x="0" y="53.34" size="1.778" layer="95" rot="R180"/>
+<pinref part="SV1" gate="G$1" pin="5"/>
 </segment>
 </net>
 </nets>
