@@ -48,8 +48,22 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "lib_footprint_mismatch|139484100|111353600|d2b66cdc-cb74-495b-8ae1-15ade7935636|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|141725000|89680000|f31c7e59-a712-4ee7-a156-0aae4d3536a4|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|150955000|121900000|82221087-c883-4ef8-8d34-a7f97f3ee439|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|159462500|121150000|bb93e340-a32a-47f2-9283-3ebb4c6600e5|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|136436100|123312400|73c2efef-114e-44a0-a993-8f3c42fc7d53|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|142532100|123312400|49d9d398-c50b-4818-9854-90dfec4c6c6e|00000000-0000-0000-0000-000000000000",
+        "text_height|136800000|94075000|a3f3a9c2-ae74-4ae4-96a7-14586ab617ee|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -164,8 +178,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -176,9 +197,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_to_pin|1130300|558800|054ac73f-4817-48b1-89b5-c706de81e20f|d9a4b108-bcb2-4613-ad20-0c1a2fe34a13|/95f78fe7-75c4-427a-aee1-7170190425b2|/95f78fe7-75c4-427a-aee1-7170190425b2|/95f78fe7-75c4-427a-aee1-7170190425b2"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -416,7 +435,7 @@
         "wire_width": 6
       },
       {
-        "bus_width": 12,
+        "bus_width": 79,
         "clearance": 0.1524,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -427,10 +446,10 @@
         "name": "power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.508,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
-        "wire_width": 6
+        "track_width": 1.0,
+        "via_diameter": 1.6,
+        "via_drill": 0.6,
+        "wire_width": 39
       }
     ],
     "meta": {
@@ -446,6 +465,14 @@
       {
         "netclass": "power",
         "pattern": "GND"
+      },
+      {
+        "netclass": "power",
+        "pattern": "VCCIO"
+      },
+      {
+        "netclass": "power",
+        "pattern": "VRAW"
       }
     ]
   },
