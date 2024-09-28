@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MySXSensors")(type "KiCad")(uri "${KIPRJMOD}/MySXSensors.kicad_sym")(options "")(descr ""))
+)

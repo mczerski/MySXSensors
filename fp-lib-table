@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "MySXSenors")(type "KiCad")(uri "$(KIPRJMOD)/MySXSenors.pretty")(options "")(descr ""))
+)
