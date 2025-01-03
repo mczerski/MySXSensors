@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.9144,
+          "height": 1.3716,
+          "width": 1.3716
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,12 +60,9 @@
       ],
       "drc_exclusions": [
         "lib_footprint_mismatch|139484100|111353600|d2b66cdc-cb74-495b-8ae1-15ade7935636|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|141725000|89680000|f31c7e59-a712-4ee7-a156-0aae4d3536a4|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|150955000|121900000|82221087-c883-4ef8-8d34-a7f97f3ee439|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|159462500|121150000|bb93e340-a32a-47f2-9283-3ebb4c6600e5|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|136436100|123312400|73c2efef-114e-44a0-a993-8f3c42fc7d53|00000000-0000-0000-0000-000000000000",
-        "silk_over_copper|142532100|123312400|49d9d398-c50b-4818-9854-90dfec4c6c6e|00000000-0000-0000-0000-000000000000",
-        "text_height|136800000|94075000|a3f3a9c2-ae74-4ae4-96a7-14586ab617ee|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|156825000|93550000|f31c7e59-a712-4ee7-a156-0aae4d3536a4|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|136436100|123312400|49d9d398-c50b-4818-9854-90dfec4c6c6e|00000000-0000-0000-0000-000000000000",
+        "silk_over_copper|142532100|123312400|73c2efef-114e-44a0-a993-8f3c42fc7d53|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -238,7 +235,10 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_to_pin|1943100|444500|d8661103-c5bb-43e7-a99f-94f3f56e624a|054ac73f-4817-48b1-89b5-c706de81e20f|/95f78fe7-75c4-427a-aee1-7170190425b2|/95f78fe7-75c4-427a-aee1-7170190425b2|/95f78fe7-75c4-427a-aee1-7170190425b2",
+      "pin_to_pin|1943100|444500|d9a4b108-bcb2-4613-ad20-0c1a2fe34a13|054ac73f-4817-48b1-89b5-c706de81e20f|/95f78fe7-75c4-427a-aee1-7170190425b2|/95f78fe7-75c4-427a-aee1-7170190425b2|/95f78fe7-75c4-427a-aee1-7170190425b2"
+    ],
     "meta": {
       "version": 0
     },
