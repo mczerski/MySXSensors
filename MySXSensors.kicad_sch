@@ -2097,12 +2097,6 @@
 		(uuid "ae90774e-c057-4b33-ab76-60e14e46e06f")
 	)
 	(junction
-		(at 114.3 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d3173141-5569-4efe-bb54-81ca86ae2af3")
-	)
-	(junction
 		(at 194.31 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2172,7 +2166,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 49.53) (xy 101.6 49.53)
+			(xy 101.6 49.53) (xy 125.73 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2302,13 +2296,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 49.53) (xy 114.3 57.15)
+			(xy 116.84 57.15) (xy 114.3 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "25bdd888-538c-4102-a1a3-8dfc2c009677")
+		(uuid "27dd9dd2-4b35-4a7f-b1fb-96e477af3cd7")
 	)
 	(wire
 		(pts
@@ -2829,16 +2823,6 @@
 			(type default)
 		)
 		(uuid "f569f40d-565f-4936-961c-6483cd62187a")
-	)
-	(wire
-		(pts
-			(xy 125.73 49.53) (xy 114.3 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc0dbe26-990c-432c-b800-4ba7de21cac6")
 	)
 	(rectangle
 		(start 134.62 100.33)
@@ -4231,6 +4215,74 @@
 			(project "MySXSensors"
 				(path "/95f78fe7-75c4-427a-aee1-7170190425b2"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 116.84 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e85bc9a-e9a3-454a-bb9a-52b3dd16d0a4")
+		(property "Reference" "#PWR08"
+			(at 123.19 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 120.65 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1682d265-c178-40b5-afe9-d5314133d509")
+		)
+		(instances
+			(project "MySXSensors"
+				(path "/95f78fe7-75c4-427a-aee1-7170190425b2"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
