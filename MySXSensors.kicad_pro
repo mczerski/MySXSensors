@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.9144,
-          "height": 1.3716,
-          "width": 1.3716
+          "drill": 0.0,
+          "height": 0.9652,
+          "width": 1.9304
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,7 +60,6 @@
       ],
       "drc_exclusions": [
         "lib_footprint_mismatch|139484100|111353600|d2b66cdc-cb74-495b-8ae1-15ade7935636|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|156825000|93550000|f31c7e59-a712-4ee7-a156-0aae4d3536a4|00000000-0000-0000-0000-000000000000",
         "silk_over_copper|136436100|123312400|49d9d398-c50b-4818-9854-90dfec4c6c6e|00000000-0000-0000-0000-000000000000",
         "silk_over_copper|142532100|123312400|73c2efef-114e-44a0-a993-8f3c42fc7d53|00000000-0000-0000-0000-000000000000"
       ],
@@ -523,7 +522,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "plots",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -634,7 +633,7 @@
   "sheets": [
     [
       "95f78fe7-75c4-427a-aee1-7170190425b2",
-      "Główny"
+      "Root"
     ]
   ],
   "text_variables": {}
