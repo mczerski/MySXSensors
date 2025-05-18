@@ -2176,13 +2176,13 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 130.81) (xy 162.56 130.81)
+			(xy 152.4 133.35) (xy 162.56 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0760560c-51ed-4417-9620-e2f176195869")
+		(uuid "076a519b-fc07-46c9-8ca8-8e85e912f2ac")
 	)
 	(wire
 		(pts
@@ -2326,16 +2326,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 128.27) (xy 162.56 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33307682-213b-4c8f-929a-37dd08677698")
-	)
-	(wire
-		(pts
 			(xy 87.63 119.38) (xy 92.71 119.38)
 		)
 		(stroke
@@ -2406,6 +2396,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 130.81) (xy 162.56 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52fc9395-6076-4f17-b77e-c3f068eb7af9")
+	)
+	(wire
+		(pts
 			(xy 87.63 124.46) (xy 92.71 124.46)
 		)
 		(stroke
@@ -2423,6 +2423,16 @@
 			(type default)
 		)
 		(uuid "5639f4b8-473e-43f7-8ff1-74c45dd0d182")
+	)
+	(wire
+		(pts
+			(xy 160.02 128.27) (xy 162.56 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "590ea917-7abb-425f-95cc-2eb34013ae71")
 	)
 	(wire
 		(pts
@@ -2453,16 +2463,6 @@
 			(type solid)
 		)
 		(uuid "5f741ee1-49d8-4d97-a346-5e4f868219e3")
-	)
-	(wire
-		(pts
-			(xy 152.4 133.35) (xy 162.56 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fbe2236-5a0b-4799-b33d-35306b1bfe97")
 	)
 	(wire
 		(pts
@@ -2503,16 +2503,6 @@
 			(type default)
 		)
 		(uuid "8ae0dc55-7a40-4415-8f39-56fe47b859d8")
-	)
-	(wire
-		(pts
-			(xy 161.29 125.73) (xy 162.56 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "952597ad-5c72-43b4-93bd-9667ebe5c7fc")
 	)
 	(wire
 		(pts
@@ -2813,6 +2803,16 @@
 			(type default)
 		)
 		(uuid "f402ac47-8aa0-44c4-aa5d-484db4ce2896")
+	)
+	(wire
+		(pts
+			(xy 162.56 125.73) (xy 161.29 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f406b416-33ff-43df-80ba-2b2ceea89359")
 	)
 	(wire
 		(pts
@@ -3668,8 +3668,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 167.64 130.81 0)
-		(mirror x)
+		(at 167.64 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3677,15 +3676,6 @@
 		(dnp no)
 		(uuid "357dfd35-a9cc-4aa7-a157-50eb7500dd90")
 		(property "Reference" "J2"
-			(at 170.815 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "UART"
 			(at 170.815 128.27 0)
 			(effects
 				(font
@@ -3694,8 +3684,17 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
-			(at 167.64 130.81 0)
+		(property "Value" "UART"
+			(at 170.815 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MySXSensors:JST-XH_S_4P-2.54MM-PIN1-RIGHT"
+			(at 167.64 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3704,7 +3703,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 167.64 130.81 0)
+			(at 167.64 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3713,7 +3712,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 130.81 0)
+			(at 167.64 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4716,8 +4715,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 116.84 144.78 0)
-		(mirror x)
+		(at 116.84 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4725,15 +4723,6 @@
 		(dnp no)
 		(uuid "977352e0-ff54-4530-9a70-47f4f34d9de9")
 		(property "Reference" "J3"
-			(at 120.015 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "I2C"
 			(at 120.015 142.24 0)
 			(effects
 				(font
@@ -4742,8 +4731,17 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
-			(at 116.84 144.78 0)
+		(property "Value" "I2C"
+			(at 120.015 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MySXSensors:JST-XH_S_4P-2.54MM-PIN1-RIGHT"
+			(at 116.84 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4752,7 +4750,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 116.84 144.78 0)
+			(at 116.84 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4761,7 +4759,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 144.78 0)
+			(at 116.84 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
