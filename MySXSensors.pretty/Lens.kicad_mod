@@ -1,0 +1,165 @@
+(footprint "Lens"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "5d4b3149-8ccd-4a9f-a57b-8df49c950a26")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Lens"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "963b7761-fbd3-4bbd-9b16-fc666f648560")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04e7ea52-f52b-442c-90ec-177ed5a2a4cb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13f12220-bf4e-4115-a2ef-b2454f9346fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c7677387-3905-4c41-8f81-4d6ecb6aa529")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -1.904259 3.407622)
+		(end -1.9 6.22)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ff2dcdf5-7e83-4937-a130-1e114b4d919f")
+	)
+	(fp_line
+		(start -1.9 -6.22)
+		(end -1.9 -3.409999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d573e847-8eb2-4307-8b88-ac29e857e542")
+	)
+	(fp_line
+		(start 1.9 -6.22)
+		(end 1.9 -3.409999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "3c4d15a8-4b50-4b08-b8cd-c156e8a5c448")
+	)
+	(fp_line
+		(start 1.9 3.409999)
+		(end 1.9 6.22)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "79de0fc0-9a5d-4822-8e74-5b8a5c29c3ab")
+	)
+	(fp_arc
+		(start -1.904259 3.407622)
+		(mid -3.903599 -0.002439)
+		(end -1.9 -3.409999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4d87c1bc-724a-42e9-a21d-6b7263a95d73")
+	)
+	(fp_arc
+		(start -1.9 6.22)
+		(mid -6.503722 0)
+		(end -1.9 -6.22)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "598f4705-9df6-4def-84ec-bda1c9738825")
+	)
+	(fp_arc
+		(start 1.9 -6.22)
+		(mid 6.503722 0)
+		(end 1.9 6.22)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2772b758-2138-45e8-9e4c-62c9aa717f21")
+	)
+	(fp_arc
+		(start 1.9 -3.409999)
+		(mid 3.9036 0)
+		(end 1.9 3.409999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c547c132-4704-4841-a4ca-506236c8db51")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b74d9d18-fef3-4583-9dee-dca8e6e3d77d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+)
